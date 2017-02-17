@@ -1,13 +1,17 @@
 <h1>Full Menu</h1>
 
 <hr>
-<% if @products.any? %>
-  <% @products.each do |product| %>
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <% if @products.any? %>
+    <% @products.each do |product| %>
     <%= link_to product_path(product) do %>
-      <%= image_tag product.image.url(:medium) %>
+    <%= image_tag product.image.url(:medium) %>
     <% end %>
-    <h4><%= link_to product.name, product_path(product) %></h4>
-  <% end %>
-<% else %>
-  <h1>Oops! there are no products listed yet! please come back later!</h1>
-<% end %>
+    <h4><%= link_to product.name, product_path(product) %></h4><hr>
+    <% end %>
+    <% else %>
+    <h1>Oops! there are no products listed yet! please come back later!</h1>
+    <% end %>    
+  </div>
+</div>

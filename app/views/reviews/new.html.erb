@@ -1,11 +1,16 @@
-<h1><%= @product.name %></h1>
-<%= image_tag @product.image.url(:medium) %>
-<h4><%= @product.description %></h4>
-<hr>
-<h3>Add a Review</h3><br>
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <h1><%= @product.name %></h1>
+    <%= image_tag @product.image.url(:medium) %>
+    <h4><%= @product.description %></h4>
+    <hr>
+    <h3>Add a Review</h3>
 
-<%= render 'form' %>
+    <%= render 'form' %>
 
-<%= link_to product_path(@product) do %>
-  <button type="button" class="btn btn-info">Back</button>
-<% end %>
+    <%= link_to product_path(@product) do %>
+      <button type="button" class="btn btn-info">Back</button>
+    <% end %>
+
+  </div>
+</div>

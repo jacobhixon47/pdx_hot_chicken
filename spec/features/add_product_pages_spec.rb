@@ -7,6 +7,7 @@ describe 'add a product' do
     visit '/'
     click_link '+ Add Product'
     fill_in 'Name', :with => 'Hot Chicken'
+    fill_in 'Price', :with => 9
     fill_in 'Description', :with => 'delicious hot chicken'
     page.attach_file('product[image]', 'spec/fixtures/images/chickensample.jpg')
     click_button 'Create Product'

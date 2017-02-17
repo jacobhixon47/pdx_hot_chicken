@@ -11,9 +11,42 @@
  * It is generally better to create a new file per style scope.
  *
  */
- @import "bootstrap-sprockets";
- @import "bootstrap";
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+$base-orange : #AA4639;
+
+body {
+ background-color: #000;
+ color: #fff;
+}
 
 nav {
-  padding-right: 2%;
+ padding-right: 2%;
+ background-color: $base-orange !important;
+ border: none !important;
+ border-radius: 0px !important;
+}
+
+.nav-list li a, .navbar-brand {
+ color: #fff !important;
+}
+
+.nav-list li a:hover, .navbar-brand:hover {
+ color: #ddd !important;
+}
+
+.col-md-8 {
+ text-align: center;
+}
+
+.review {
+  border: 1px #fff solid;
+  padding: 2%;
+  text-align: left;
+}
+
+input, textarea {
+  background-color: #ccc;
+  color: #000;
 }
