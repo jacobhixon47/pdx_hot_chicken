@@ -1,0 +1,13 @@
+<h1>Full Menu</h1>
+
+<hr>
+<% if @products.any? %>
+  <% @products.each do |product| %>
+    <%= link_to product_path(product) do %>
+      <%= image_tag image.picture.url(:medium) %>
+    <% end %>
+    <%= link_to product.name, product_path(product) %>
+  <% end %>
+<% else %>
+  <h1>Oops! Menu is going through maintenance, please come back later!</h1>
+<% end %>

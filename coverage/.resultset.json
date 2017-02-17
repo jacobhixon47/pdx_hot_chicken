@@ -560,6 +560,8 @@
         null,
         1,
         null,
+        1,
+        null,
         null
       ],
       "/Users/Guest/Desktop/pdx_hot_chicken/app/models/user.rb": [
@@ -611,6 +613,33 @@
         null,
         null
       ],
+      "/Users/Guest/Desktop/pdx_hot_chicken/app/controllers/products_controller.rb": [
+        1,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        1,
+        0,
+        null,
+        null
+      ],
       "/Users/Guest/Desktop/pdx_hot_chicken/app/controllers/registrations_controller.rb": [
         1,
         null,
@@ -657,6 +686,14 @@
         1,
         null
       ],
+      "/Users/Guest/Desktop/pdx_hot_chicken/app/models/product.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        null
+      ],
       "/Users/Guest/Desktop/pdx_hot_chicken/spec/factories/users.rb": [
         1,
         1,
@@ -682,6 +719,15 @@
         null,
         null
       ],
+      "/Users/Guest/Desktop/pdx_hot_chicken/spec/models/product_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        null
+      ],
       "/Users/Guest/Desktop/pdx_hot_chicken/spec/models/user_spec.rb": [
         1,
         null,
@@ -692,6 +738,6 @@
         null
       ]
     },
-    "timestamp": 1487356311
+    "timestamp": 1487359749
   }
 }

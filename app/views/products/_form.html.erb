@@ -1,0 +1,16 @@
+<%= form_for @image do |f| %>
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p><br>
+  <p>
+    <%= f.label :description %>
+    <%= f.text_area :description, :rows => 10, :cols => 40 %>
+  </p><br>
+  <p>
+    <%= f.file_field :image, :id => 'pictureInput' %>
+  </p>
+  <p>
+    <%= f.submit, :class => 'btn btn-success' %>
+  </p>
+<% end %>
