@@ -1,0 +1,19 @@
+<h1><%= @product.name %></h1>
+<%= image_tag @product.image.url(:medium) %>
+<h4><%= @product.description %></h4>
+<hr>
+<%= link_to products_path do %>
+  <button type="button" class="btn btn-info">Back</button>
+<% end %>
+
+<% if current_user.admin === true %>
+  <%= link_to edit_product_path(@product) do %>
+    <button type="button" class="btn btn-warning">Edit</button>
+  <% end %>
+  <%= link_to product_path(@product), :data => {
+                                        :confirm => 'Are you sure you wish to delete this product?',
+                                        :method => 'delete' } do %>
+    <button type="button" class="btn btn-danger">Delete</button>
+  <% end %>
+
+<% end %>

@@ -3,6 +3,10 @@ class ProductsController < ApplicationController
     @products = Product.all
   end
 
+  def show
+    @product = Product.find(params[:id])
+  end
+
   def new
     @product = Product.new
   end
@@ -15,6 +19,30 @@ class ProductsController < ApplicationController
     else
       flash[:alert] = 'There was a problem adding your product. Please try again.'
       render :new
+    end
+  end
+
+  def edit
+    @product = Product.find(params[:id])
+  end
+
+  def update
+    @product = Product.find(params[:id])
+    if @product.update(product_params)
+      flash[:notice] = "Product successfully updated!"
+      redirect_to product_path(@product)
+    else
+      flash[:alert] = "There was a problem updating this product. Please try again."
+      render :edit
+    end
+  end
+
+  def destroy
+    @product = Product.find(params[:id])
+    if @product.destroy
+      redirect_to products_path
+    else
+      render :show
     end
   end
 
