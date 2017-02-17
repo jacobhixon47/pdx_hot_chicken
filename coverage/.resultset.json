@@ -1,14 +1,15 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Guest/Desktop/pdx_hot_chicken/spec/models/user_spec.rb": [
+      "/Users/Guest/Desktop/pdx_hot_chicken/spec/features/add_comment_pages_spec.rb": [
         1,
         null,
         1,
-        2,
-        2,
-        2,
-        2,
+        1,
+        null,
+        null,
+        null,
+        null,
         null
       ],
       "/Users/Guest/Desktop/pdx_hot_chicken/spec/rails_helper.rb": [
@@ -551,16 +552,6 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/pdx_hot_chicken/spec/factories/users.rb": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
       "/Users/Guest/Desktop/pdx_hot_chicken/config/routes.rb": [
         1,
         1,
@@ -585,11 +576,122 @@
         1,
         null
       ],
+      "/Users/Guest/Desktop/pdx_hot_chicken/app/controllers/application_controller.rb": [
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "/Users/Guest/Desktop/pdx_hot_chicken/app/helpers/application_helper.rb": [
         1,
         null
+      ],
+      "/Users/Guest/Desktop/pdx_hot_chicken/app/channels/application_cable/channel.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/pdx_hot_chicken/app/channels/application_cable/connection.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/pdx_hot_chicken/app/controllers/home_controller.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/pdx_hot_chicken/app/controllers/registrations_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        0,
+        0,
+        null,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/pdx_hot_chicken/app/controllers/users_controller.rb": [
+        1,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/pdx_hot_chicken/app/jobs/application_job.rb": [
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/pdx_hot_chicken/app/mailers/application_mailer.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/pdx_hot_chicken/spec/factories/users.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/pdx_hot_chicken/spec/features/signup_pages_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/pdx_hot_chicken/spec/models/user_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        null
       ]
     },
-    "timestamp": 1487353531
+    "timestamp": 1487356311
   }
 }
