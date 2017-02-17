@@ -15,5 +15,27 @@
                                         :method => 'delete' } do %>
     <button type="button" class="btn btn-danger">Delete</button>
   <% end %>
+<% end %>
 
+<% if user_signed_in? %>
+  <%= link_to new_product_review_path(@product) do %>
+    <button type="button" class="btn btn-success">Post Review</button>
+  <% end %>
+<% end %>
+<hr>
+<h2>Reviews</h2>
+<% if @product.reviews.any? %>
+  <% @product.reviews.each do |review| %>
+    <p class="review">
+      <%= link_to review.user.username, user_path(review.user) %><br>
+      <%= review.content %><br>
+      <% if current_user.admin? %>
+        <%= link_to "Delete Review", product_review_path(@product, review), :data => {
+        :confirm => 'Are you sure you want to delete this comment?',
+        :method => 'delete' } %>
+      <% end %>
+    </p>
+  <% end %>
+<% else %>
+  <h4>No Reviews Yet!</h4>
 <% end %>

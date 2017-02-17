@@ -1,0 +1,9 @@
+<%= form_for [@product, @review] do |f| %>
+  <p>
+    <%= f.label :content %><br>
+    <%= f.text_area :content, :rows => 10, :cols => 40 %>
+  </p><br>
+  <p>
+    <%= f.submit :class => 'btn btn-success' %>
+  </p>
+<% end %>
