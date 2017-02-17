@@ -43,6 +43,7 @@
         1,
         null,
         1,
+        1,
         null,
         1,
         null,
@@ -616,27 +617,27 @@
       "/Users/Guest/Desktop/pdx_hot_chicken/app/controllers/products_controller.rb": [
         1,
         1,
-        0,
-        null,
-        null,
         1,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
         null,
         null,
         1,
         1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
         0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
         null,
         null
       ],
@@ -704,6 +705,23 @@
         null,
         null
       ],
+      "/Users/Guest/Desktop/pdx_hot_chicken/spec/features/add_product_pages_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/Guest/Desktop/pdx_hot_chicken/spec/features/signup_pages_spec.rb": [
         1,
         null,
@@ -738,6 +756,6 @@
         null
       ]
     },
-    "timestamp": 1487359749
+    "timestamp": 1487360998
   }
 }

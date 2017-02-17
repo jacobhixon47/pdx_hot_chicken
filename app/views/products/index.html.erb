@@ -4,9 +4,9 @@
 <% if @products.any? %>
   <% @products.each do |product| %>
     <%= link_to product_path(product) do %>
-      <%= image_tag image.picture.url(:medium) %>
+      <%= image_tag product.image.url(:medium) %>
     <% end %>
-    <%= link_to product.name, product_path(product) %>
+    <h4><%= link_to product.name, product_path(product) %></h4>
   <% end %>
 <% else %>
   <h1>Oops! Menu is going through maintenance, please come back later!</h1>
