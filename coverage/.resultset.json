@@ -642,7 +642,7 @@
         null,
         null,
         1,
-        5,
+        7,
         null,
         null,
         1,
@@ -740,11 +740,11 @@
         null,
         null,
         1,
-        0,
-        0,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
+        1,
+        1,
         null,
         0,
         0,
@@ -797,7 +797,7 @@
         1,
         1,
         1,
-        4,
+        5,
         null,
         null
       ],
@@ -839,6 +839,21 @@
       "/Users/Guest/Desktop/pdx_hot_chicken/spec/features/delete_product_pages_spec.rb": [
         1,
         null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/pdx_hot_chicken/spec/features/delete_review_pages_spec.rb": [
+        1,
+        null,
+        1,
         1,
         1,
         1,
@@ -909,6 +924,6 @@
         null
       ]
     },
-    "timestamp": 1487368149
+    "timestamp": 1487368371
   }
 }
