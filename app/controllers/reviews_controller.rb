@@ -1,6 +1,6 @@
 class ReviewsController < ApplicationController
   def new
-    if current_user.admin?
+    if user_signed_in?
       @product = Product.find(params[:product_id])
       @review = @product.reviews.new
     else
@@ -10,7 +10,7 @@ class ReviewsController < ApplicationController
   end
 
   def create
-    if current_user.admin?
+    if user_signed_in?
       @product = Product.find(params[:product_id])
       @review = @product.reviews.new(review_params)
       @review.user_id = current_user.id
@@ -28,7 +28,7 @@ class ReviewsController < ApplicationController
   end
 
   def destroy
-    if current_user.admin?
+    if user_signed_in?
       @product = Product.find(params[:product_id])
       @review = Review.find(params[:id])
       if @review.destroy
