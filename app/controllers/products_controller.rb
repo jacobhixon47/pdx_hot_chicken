@@ -8,44 +8,69 @@ class ProductsController < ApplicationController
   end
 
   def new
-    @product = Product.new
+    if current_user.admin?
+      @product = Product.new
+    else
+      flash[:alert] = "Oops! You don't have the credentials for that."
+      redirect_to products_path
+    end
   end
 
   def create
-    @product = Product.new(product_params)
-    if @product.save
-      flash[:notice] = "Product successfully added!"
-      redirect_to products_path
+    if current_user.admin?
+      @product = Product.new(product_params)
+      if @product.save
+        flash[:notice] = "Product successfully added!"
+        redirect_to products_path
+      else
+        flash[:alert] = 'There was a problem adding your product. Please try again.'
+        render :new
+      end
     else
-      flash[:alert] = 'There was a problem adding your product. Please try again.'
-      render :new
+      flash[:alert] = "Oops! You don't have the credentials for that."
+      redirect_to products_path
     end
   end
 
   def edit
-    @product = Product.find(params[:id])
+    if current_user.admin?
+      @product = Product.find(params[:id])
+    else
+      flash[:alert] = "Oops! You don't have the credentials for that."
+      redirect_to products_path
+    end
   end
 
   def update
-    @product = Product.find(params[:id])
-    if @product.update(product_params)
-      flash[:notice] = "Product successfully updated!"
-      redirect_to product_path(@product)
+    if current_user.admin?
+      @product = Product.find(params[:id])
+      if @product.update(product_params)
+        flash[:notice] = "Product successfully updated!"
+        redirect_to product_path(@product)
+      else
+        flash[:alert] = "There was a problem updating this product. Please try again."
+        render :edit
+      end
     else
-      flash[:alert] = "There was a problem updating this product. Please try again."
-      render :edit
+      flash[:alert] = "Oops! You don't have the credentials for that."
+      redirect_to products_path
     end
   end
 
   def destroy
-    @product = Product.find(params[:id])
-    if @product.destroy
-      @product.reviews.each do |review|
-        review.destroy
+    if current_user.admin?
+      @product = Product.find(params[:id])
+      if @product.destroy
+        @product.reviews.each do |review|
+          review.destroy
+        end
+        redirect_to products_path
+      else
+        render :show
       end
-      redirect_to products_path
     else
-      render :show
+      flash[:alert] = "Oops! You don't have the credentials for that."
+      redirect_to products_path
     end
   end
 
